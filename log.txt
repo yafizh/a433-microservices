@@ -1,0 +1,53 @@
+time="2026-10-07T10:58:38+07:00" level=warning msg="/home/khairil/projects/personal/dicoding/microservice/a433-microservices/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Network a433-microservices_default  Creating
+ Network a433-microservices_default  Created
+ Container a433-microservices-item-db-1  Creating
+ Container a433-microservices-item-db-1  Created
+ Container a433-microservices-item-app-1  Creating
+ Container a433-microservices-item-app-1  Created
+Attaching to item-app-1, item-db-1
+item-db-1  | 2026-10-07T03:58:40.329+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=9ddeb387bf0a
+item-db-1  | 2026-10-07T03:58:40.334+0000 I CONTROL  [initandlisten] db version v3.6.23
+item-db-1  | 2026-10-07T03:58:40.334+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+item-db-1  | 2026-10-07T03:58:40.334+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+item-db-1  | 2026-10-07T03:58:40.334+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+item-db-1  | 2026-10-07T03:58:40.334+0000 I CONTROL  [initandlisten] modules: none
+item-db-1  | 2026-10-07T03:58:40.334+0000 I CONTROL  [initandlisten] build environment:
+item-db-1  | 2026-10-07T03:58:40.334+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+item-db-1  | 2026-10-07T03:58:40.334+0000 I CONTROL  [initandlisten]     distarch: x86_64
+item-db-1  | 2026-10-07T03:58:40.334+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+item-db-1  | 2026-10-07T03:58:40.334+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+item-db-1  | 2026-10-07T03:58:40.340+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+item-db-1  | 2026-10-07T03:58:40.340+0000 I STORAGE  [initandlisten] 
+item-db-1  | 2026-10-07T03:58:40.340+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+item-db-1  | 2026-10-07T03:58:40.340+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+item-db-1  | 2026-10-07T03:58:40.340+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7299M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+item-db-1  | 2026-10-07T03:58:41.622+0000 I STORAGE  [initandlisten] WiredTiger message [1791345521:622302][1:0x767af96f2a40], txn-recover: Main recovery loop: starting at 2/8704
+item-db-1  | 2026-10-07T03:58:41.730+0000 I STORAGE  [initandlisten] WiredTiger message [1791345521:730305][1:0x767af96f2a40], txn-recover: Recovering log 2 through 3
+item-db-1  | 2026-10-07T03:58:41.810+0000 I STORAGE  [initandlisten] WiredTiger message [1791345521:810750][1:0x767af96f2a40], txn-recover: Recovering log 3 through 3
+item-db-1  | 2026-10-07T03:58:41.862+0000 I STORAGE  [initandlisten] WiredTiger message [1791345521:862724][1:0x767af96f2a40], txn-recover: Set global recovery timestamp: 0
+item-db-1  | 2026-10-07T03:58:41.898+0000 I CONTROL  [initandlisten] 
+item-db-1  | 2026-10-07T03:58:41.898+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+item-db-1  | 2026-10-07T03:58:41.898+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+item-db-1  | 2026-10-07T03:58:41.898+0000 I CONTROL  [initandlisten] 
+item-db-1  | 2026-10-07T03:58:41.924+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+item-db-1  | 2026-10-07T03:58:41.927+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+item-db-1  | 2026-10-07T03:58:41.927+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+item-db-1  | 2026-10-07T03:58:41.927+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+item-db-1  | 2026-10-07T03:58:45.083+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:47356 #1 (1 connection now open)
+item-db-1  | 2026-10-07T03:58:45.086+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:47356 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+item-db-1  | 2026-10-07T03:58:45.096+0000 I NETWORK  [conn1] end connection 127.0.0.1:47356 (0 connections now open)
+item-app-1  | 
+item-app-1  | > docker-software-delivery@1.0.0 start /app
+item-app-1  | > node ./bin/www
+item-app-1  | 
+item-app-1  | NODE_ENV: production
+item-db-1   | 2026-10-07T03:58:47.098+0000 I NETWORK  [listener] connection accepted from 192.168.96.3:48438 #2 (1 connection now open)
+item-db-1   | 2026-10-07T03:58:47.110+0000 I NETWORK  [conn2] received client metadata from 192.168.96.3:48438 conn2: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "6.6.87.2-microsoft-standard-WSL2" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+item-app-1  | Connected to database
+item-app-1  | GET / 200 285.383 ms - 787
+item-app-1  | GET / 200 0.740 ms - 787
+item-app-1  | GET /stylesheets/style.css 200 14.547 ms - 519
+item-db-1   | 2026-10-07T03:58:50.111+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:59124 #3 (2 connections now open)
+item-db-1   | 2026-10-07T03:58:50.112+0000 I NETWORK  [conn3] received client metadata from 127.0.0.1:59124 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.23" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "16.04" } }
+item-db-1   | 2026-10-07T03:58:50.114+0000 I NETWORK  [conn3] end connection 127.0.0.1:59124 (1 connection now open)
